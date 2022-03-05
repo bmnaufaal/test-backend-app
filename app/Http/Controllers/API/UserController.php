@@ -25,6 +25,7 @@ class UserController extends Controller
             ]);
 
             // Mengecek credentials (login)
+            // Test commit
             $credentials = request('email','password');
             if(!Auth::attempt([$credentials])) {
                 return ResponseFormatter::error([
